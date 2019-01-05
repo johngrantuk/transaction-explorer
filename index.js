@@ -1,7 +1,7 @@
 const Web3 = require('web3');
 const { Pool } = require('pg');
 const pool = new Pool({
-  connectionString: 'postgres://xbaydndxonqipl:8fea1f19de56e5a935cab7b6d9244289fee37f709d1321f68b4ffa6b6efbac6c@ec2-23-21-86-22.compute-1.amazonaws.com:5432/dmt5n9tsrugnj',
+  connectionString: process.env.DATABASE_URL,
   ssl: true
 });
 
